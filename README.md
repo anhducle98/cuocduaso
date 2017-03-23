@@ -1,3 +1,5 @@
+Build command: $ cmake -DCMAKE_BUILD_TYPE=Release .
+
 # Digital Race
 
 [![N|Solid](https://cuocduaso.fpt.com.vn/sites/default/files/styles/gallery_image_300x220/public/media-youtube/fk8ZaMxiRQQ.jpg?itok=9ZvryNrn)](https://cuocduaso.fpt.com.vn)
