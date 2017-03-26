@@ -2,7 +2,7 @@
 //#define SHOW_OUTPUT
 //#define WRITE_VIDEO
 
-void convert_to_topview(Mat inputImg, Mat &outputImg) {
+void convert_to_topview(const Mat &inputImg, Mat &outputImg) {
     int height = inputImg.rows;
     int width = inputImg.cols;
 
@@ -153,11 +153,11 @@ double process_frame(Mat &bgr_frame, VideoWriter &bgr_writer) { //returns theta
     static Mat binary_frame;
 
     convert_to_topview(bgr_frame, topview_frame);
+    resize(topview_frame, topview_frame, Size(240, 320));
     cvtColor(topview_frame, gray_frame, CV_BGR2GRAY);
     
     static Mat element = cv::getStructuringElement(MORPH_RECT, Size(3, 3), Point(1, 1));
     edgeProcessing(gray_frame, binary_frame, element, "Wavelet");
-
     
     vector<Vec4i> lines;
     run_hough_transform(binary_frame, lines);

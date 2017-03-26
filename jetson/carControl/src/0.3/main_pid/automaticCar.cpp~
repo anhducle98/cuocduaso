@@ -301,7 +301,7 @@ int main( int argc, char* argv[] ) {
                 /**
                     Status = BGR Image. Since we developed this project to run a sample, we only used information of gray image.
                 **/
-                theta = 0;//process_frame(colorImg, color_videoWriter);
+                theta = process_frame(colorImg, color_videoWriter);
                 std::cerr << "Theta = " << theta << std::endl;
                 cvtColor(colorImg, grayImage, CV_BGR2GRAY);
                 // api_get_lane_center( grayImage, center_point, true);
