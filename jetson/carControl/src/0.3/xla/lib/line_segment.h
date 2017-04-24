@@ -10,12 +10,25 @@ class Line {
 public:
     cv::Point P, Q; //endpoints
     double a, b, c; //ax + by = c
+    bool is_left;
+
+    Line() {}
 
     Line(cv::Point P, cv::Point Q) {
         this->P = P; this->Q = Q;
+        calc_params();
+    }
+
+    void calc_params() {
         a = P.y - Q.y;
         b = Q.x - P.x;
         c = a * P.x + b * P.y;
+    }
+
+    void shift(int dx) {
+        P.x += dx;
+        Q.x += dx;
+        calc_params();
     }
 
     double intersect(double y) {
@@ -30,13 +43,6 @@ public:
         return res;
     }
 
-    double dist_to_point(const cv::Point M) {
-        if (contain_point(M)) {
-            return 0;
-        }
-        return std::min(cv::norm(P - M), cv::norm(Q - M));
-    }
-
     double length() {
         return cv::norm(P - Q);
     }
@@ -44,9 +50,23 @@ public:
     bool contain_point(cv::Point M) {
         return fabs(cv::norm(P - M) + cv::norm(Q - M) - length()) < EPSILON;
     }
+
+    double dist_to_point(cv::Point M) {
+        double MP = cv::norm(M - P);
+        double MQ = cv::norm(M - Q);
+        double answer = std::min(MP, MQ);
+        double area_of_triangle = abs(M.x * (P.y - Q.y) + P.x * (Q.y - M.y) + Q.x * (M.y - P.y));
+        answer = std::min(answer, area_of_triangle / length());
+        return answer;
+    }
+
+    double horizontal_dist_to_point(cv::Point M) {
+        return M.x - intersect(M.y);
+    }
 };
 
 cv::Point intersection(const Line d1, const Line d2);
 double angle_between_two_lines(Line d1, Line d2);
+Line approximate(const std::vector<Line> &lines, double angle);
 
 #endif

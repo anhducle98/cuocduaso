@@ -23,15 +23,22 @@ int main(int argc, char **argv) {
     VideoWriter bgr_writer;
     bgr_writer.open("bgr.avi", CV_FOURCC('X', 'V', 'I', 'D'), 10, Size(width, height));
 
+    Line last_lane_line;
+    bool first_frame = true;
+    XLA xla("../topview_auto/params.txt");
+
     while (true) {
         cerr << "BEGIN #" << video_capture.get(CV_CAP_PROP_POS_FRAMES) << endl;
 
         static Mat bgr_frame;
         video_capture >> bgr_frame;
         if (bgr_frame.empty()) break;
-        process_frame(bgr_frame, bgr_writer);
+        Line lane_line = xla.process_frame(bgr_frame, bgr_writer);
+        double steering_angle = xla.adjust_angle(last_lane_line, lane_line);
+        last_lane_line = lane_line;
         
         cerr << "END #" << video_capture.get(CV_CAP_PROP_POS_FRAMES) << endl;
+        first_frame = false;
     }
 
     bgr_writer.release();

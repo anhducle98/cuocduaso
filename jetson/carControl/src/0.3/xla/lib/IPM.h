@@ -11,6 +11,7 @@
 class IPM
 {
 public:	
+	IPM() {}
 	IPM( const cv::Size& _origSize, const cv::Size& _dstSize, 
 		const std::vector<cv::Point2f>& _origPoints, const std::vector<cv::Point2f>& _dstPoints );		
 	
