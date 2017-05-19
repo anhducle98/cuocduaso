@@ -44,6 +44,9 @@ CMakeFiles/test-autocar.dir/xla/lib/api_lane_detection.cpp.o: /usr/include/openc
 CMakeFiles/test-autocar.dir/xla/lib/api_lane_detection.cpp.o: /usr/include/opencv/cxcore.h
 CMakeFiles/test-autocar.dir/xla/lib/api_lane_detection.cpp.o: /usr/include/opencv/highgui.h
 
+CMakeFiles/test-autocar.dir/xla/lib/line_detect_topview.cpp.o: xla/lib/line_detect_topview.cpp
+CMakeFiles/test-autocar.dir/xla/lib/line_detect_topview.cpp.o: xla/lib/line_detect_topview.h
+
 CMakeFiles/test-autocar.dir/xla/lib/line_segment.cpp.o: xla/lib/line_segment.cpp
 CMakeFiles/test-autocar.dir/xla/lib/line_segment.cpp.o: xla/lib/line_segment.h
 
@@ -64,11 +67,16 @@ CMakeFiles/test-autocar.dir/xla/lib/msac/errorNIETO.cpp.o: /usr/include/opencv/h
 CMakeFiles/test-autocar.dir/xla/lib/msac/lmmin.cpp.o: xla/lib/msac/lmmin.cpp
 CMakeFiles/test-autocar.dir/xla/lib/msac/lmmin.cpp.o: xla/lib/msac/lmmin.h
 
+CMakeFiles/test-autocar.dir/xla/lib/object_detect_topview.cpp.o: xla/lib/line_detect_topview.h
+CMakeFiles/test-autocar.dir/xla/lib/object_detect_topview.cpp.o: xla/lib/object_detect_topview.cpp
+
 CMakeFiles/test-autocar.dir/xla/xla.cpp.o: xla/./lib/IPM.h
 CMakeFiles/test-autocar.dir/xla/xla.cpp.o: xla/./lib/api_lane_detection.h
 CMakeFiles/test-autocar.dir/xla/xla.cpp.o: xla/./lib/line_segment.h
 CMakeFiles/test-autocar.dir/xla/xla.cpp.o: xla/./lib/msac/MSAC.h
 CMakeFiles/test-autocar.dir/xla/xla.cpp.o: xla/./lib/msac/errorNIETO.h
+CMakeFiles/test-autocar.dir/xla/xla.cpp.o: xla/lib/line_detect_topview.h
+CMakeFiles/test-autocar.dir/xla/xla.cpp.o: xla/lib/object_detect_topview.h
 CMakeFiles/test-autocar.dir/xla/xla.cpp.o: xla/xla.cpp
 CMakeFiles/test-autocar.dir/xla/xla.cpp.o: xla/xla.h
 CMakeFiles/test-autocar.dir/xla/xla.cpp.o: /usr/include/opencv/cv.h

@@ -1,4 +1,4 @@
-# Install script for directory: /home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/peripheral_driver/uart
+# Install script for directory: /home/ubuntu/bkakid/jetson/carControl/src/0.3/peripheral_driver/uart
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -12,6 +12,12 @@ CMakeFiles/xla.dir/lib/api_lane_detection.cpp.o: /usr/include/opencv/cv.h
 CMakeFiles/xla.dir/lib/api_lane_detection.cpp.o: /usr/include/opencv/cxcore.h
 CMakeFiles/xla.dir/lib/api_lane_detection.cpp.o: /usr/include/opencv/highgui.h
 
+CMakeFiles/xla.dir/lib/line_detect_topview.cpp.o: lib/line_detect_topview.cpp
+CMakeFiles/xla.dir/lib/line_detect_topview.cpp.o: lib/line_detect_topview.h
+
+CMakeFiles/xla.dir/lib/line_object.cpp.o: lib/line_object.cpp
+CMakeFiles/xla.dir/lib/line_object.cpp.o: lib/line_object.h
+
 CMakeFiles/xla.dir/lib/line_segment.cpp.o: lib/line_segment.cpp
 CMakeFiles/xla.dir/lib/line_segment.cpp.o: lib/line_segment.h
 
@@ -32,6 +38,9 @@ CMakeFiles/xla.dir/lib/msac/errorNIETO.cpp.o: /usr/include/opencv/highgui.h
 CMakeFiles/xla.dir/lib/msac/lmmin.cpp.o: lib/msac/lmmin.cpp
 CMakeFiles/xla.dir/lib/msac/lmmin.cpp.o: lib/msac/lmmin.h
 
+CMakeFiles/xla.dir/lib/object_detect_topview.cpp.o: lib/line_detect_topview.h
+CMakeFiles/xla.dir/lib/object_detect_topview.cpp.o: lib/object_detect_topview.cpp
+
 CMakeFiles/xla.dir/main.cpp.o: ./lib/IPM.h
 CMakeFiles/xla.dir/main.cpp.o: ./lib/api_lane_detection.h
 CMakeFiles/xla.dir/main.cpp.o: ./lib/line_segment.h
@@ -46,8 +55,12 @@ CMakeFiles/xla.dir/main.cpp.o: /usr/include/opencv/highgui.h
 CMakeFiles/xla.dir/xla.cpp.o: ./lib/IPM.h
 CMakeFiles/xla.dir/xla.cpp.o: ./lib/api_lane_detection.h
 CMakeFiles/xla.dir/xla.cpp.o: ./lib/line_segment.h
-CMakeFiles/xla.dir/xla.cpp.o: ./lib/msac/MSAC.h
-CMakeFiles/xla.dir/xla.cpp.o: ./lib/msac/errorNIETO.h
+CMakeFiles/xla.dir/xla.cpp.o: lib/api_lane_detection.h
+CMakeFiles/xla.dir/xla.cpp.o: lib/line_detect_topview.h
+CMakeFiles/xla.dir/xla.cpp.o: lib/line_object.h
+CMakeFiles/xla.dir/xla.cpp.o: lib/msac/MSAC.h
+CMakeFiles/xla.dir/xla.cpp.o: lib/msac/errorNIETO.h
+CMakeFiles/xla.dir/xla.cpp.o: lib/object_detect_topview.h
 CMakeFiles/xla.dir/xla.cpp.o: xla.cpp
 CMakeFiles/xla.dir/xla.cpp.o: xla.h
 CMakeFiles/xla.dir/xla.cpp.o: /usr/include/opencv/cv.h

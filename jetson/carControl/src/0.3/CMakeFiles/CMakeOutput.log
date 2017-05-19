@@ -648,3 +648,631 @@ int main() {
 #endif
 }
 
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED succeded with the following output:
+Change Dir: /home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1439086798/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1439086798.dir/build.make CMakeFiles/cmTryCompileExec1439086798.dir/build
+make[1]: Entering directory `/home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1439086798.dir/src.c.o
+/usr/bin/cc   -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTryCompileExec1439086798.dir/src.c.o   -c /home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec1439086798
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1439086798.dir/link.txt --verbose=1
+/usr/bin/cc   -DOpenMP_FLAG_DETECTED -fopenmp    CMakeFiles/cmTryCompileExec1439086798.dir/src.c.o  -o cmTryCompileExec1439086798 -rdynamic 
+make[1]: Leaving directory `/home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED succeded with the following output:
+Change Dir: /home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2342392247/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2342392247.dir/build.make CMakeFiles/cmTryCompileExec2342392247.dir/build
+make[1]: Entering directory `/home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2342392247.dir/src.cxx.o
+/usr/bin/c++    -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTryCompileExec2342392247.dir/src.cxx.o -c /home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec2342392247
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2342392247.dir/link.txt --verbose=1
+/usr/bin/c++    -DOpenMP_FLAG_DETECTED -fopenmp    CMakeFiles/cmTryCompileExec2342392247.dir/src.cxx.o  -o cmTryCompileExec2342392247 -rdynamic 
+make[1]: Leaving directory `/home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED succeded with the following output:
+Change Dir: /home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec308665592/fast"
+make[1]: Entering directory `/home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec308665592.dir/build.make CMakeFiles/cmTryCompileExec308665592.dir/build
+make[2]: Entering directory `/home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec308665592.dir/src.c.o
+/usr/bin/cc   -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTryCompileExec308665592.dir/src.c.o   -c /home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec308665592
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec308665592.dir/link.txt --verbose=1
+/usr/bin/cc   -DOpenMP_FLAG_DETECTED -fopenmp    CMakeFiles/cmTryCompileExec308665592.dir/src.c.o  -o cmTryCompileExec308665592 -rdynamic 
+make[2]: Leaving directory `/home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory `/home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED succeded with the following output:
+Change Dir: /home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1589922118/fast"
+make[1]: Entering directory `/home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1589922118.dir/build.make CMakeFiles/cmTryCompileExec1589922118.dir/build
+make[2]: Entering directory `/home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1589922118.dir/src.cxx.o
+/usr/bin/c++    -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTryCompileExec1589922118.dir/src.cxx.o -c /home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec1589922118
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1589922118.dir/link.txt --verbose=1
+/usr/bin/c++    -DOpenMP_FLAG_DETECTED -fopenmp    CMakeFiles/cmTryCompileExec1589922118.dir/src.cxx.o  -o cmTryCompileExec1589922118 -rdynamic 
+make[2]: Leaving directory `/home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory `/home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED succeded with the following output:
+Change Dir: /home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1999900327/fast"
+make[1]: Entering directory `/home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1999900327.dir/build.make CMakeFiles/cmTryCompileExec1999900327.dir/build
+make[2]: Entering directory `/home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1999900327.dir/src.c.o
+/usr/bin/cc   -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTryCompileExec1999900327.dir/src.c.o   -c /home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec1999900327
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1999900327.dir/link.txt --verbose=1
+/usr/bin/cc   -DOpenMP_FLAG_DETECTED -fopenmp    CMakeFiles/cmTryCompileExec1999900327.dir/src.c.o  -o cmTryCompileExec1999900327 -rdynamic 
+make[2]: Leaving directory `/home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory `/home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED succeded with the following output:
+Change Dir: /home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2517243635/fast"
+make[1]: Entering directory `/home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2517243635.dir/build.make CMakeFiles/cmTryCompileExec2517243635.dir/build
+make[2]: Entering directory `/home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2517243635.dir/src.cxx.o
+/usr/bin/c++    -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTryCompileExec2517243635.dir/src.cxx.o -c /home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec2517243635
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2517243635.dir/link.txt --verbose=1
+/usr/bin/c++    -DOpenMP_FLAG_DETECTED -fopenmp    CMakeFiles/cmTryCompileExec2517243635.dir/src.cxx.o  -o cmTryCompileExec2517243635 -rdynamic 
+make[2]: Leaving directory `/home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory `/home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED succeded with the following output:
+Change Dir: /home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1338197717/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1338197717.dir/build.make CMakeFiles/cmTryCompileExec1338197717.dir/build
+make[1]: Entering directory `/home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1338197717.dir/src.c.o
+/usr/bin/cc   -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTryCompileExec1338197717.dir/src.c.o   -c /home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec1338197717
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1338197717.dir/link.txt --verbose=1
+/usr/bin/cc   -DOpenMP_FLAG_DETECTED -fopenmp    CMakeFiles/cmTryCompileExec1338197717.dir/src.c.o  -o cmTryCompileExec1338197717 -rdynamic 
+make[1]: Leaving directory `/home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED succeded with the following output:
+Change Dir: /home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2174782168/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2174782168.dir/build.make CMakeFiles/cmTryCompileExec2174782168.dir/build
+make[1]: Entering directory `/home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2174782168.dir/src.cxx.o
+/usr/bin/c++    -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTryCompileExec2174782168.dir/src.cxx.o -c /home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec2174782168
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2174782168.dir/link.txt --verbose=1
+/usr/bin/c++    -DOpenMP_FLAG_DETECTED -fopenmp    CMakeFiles/cmTryCompileExec2174782168.dir/src.cxx.o  -o cmTryCompileExec2174782168 -rdynamic 
+make[1]: Leaving directory `/home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED succeded with the following output:
+Change Dir: /home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1516358310/fast"
+make[1]: Entering directory `/home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1516358310.dir/build.make CMakeFiles/cmTryCompileExec1516358310.dir/build
+make[2]: Entering directory `/home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1516358310.dir/src.c.o
+/usr/bin/cc   -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTryCompileExec1516358310.dir/src.c.o   -c /home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec1516358310
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1516358310.dir/link.txt --verbose=1
+/usr/bin/cc   -DOpenMP_FLAG_DETECTED -fopenmp    CMakeFiles/cmTryCompileExec1516358310.dir/src.c.o  -o cmTryCompileExec1516358310 -rdynamic 
+make[2]: Leaving directory `/home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory `/home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED succeded with the following output:
+Change Dir: /home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec4237798730/fast"
+make[1]: Entering directory `/home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4237798730.dir/build.make CMakeFiles/cmTryCompileExec4237798730.dir/build
+make[2]: Entering directory `/home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec4237798730.dir/src.cxx.o
+/usr/bin/c++    -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTryCompileExec4237798730.dir/src.cxx.o -c /home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec4237798730
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4237798730.dir/link.txt --verbose=1
+/usr/bin/c++    -DOpenMP_FLAG_DETECTED -fopenmp    CMakeFiles/cmTryCompileExec4237798730.dir/src.cxx.o  -o cmTryCompileExec4237798730 -rdynamic 
+make[2]: Leaving directory `/home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory `/home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED succeded with the following output:
+Change Dir: /home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1731458211/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1731458211.dir/build.make CMakeFiles/cmTryCompileExec1731458211.dir/build
+make[1]: Entering directory `/home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1731458211.dir/src.c.o
+/usr/bin/cc   -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTryCompileExec1731458211.dir/src.c.o   -c /home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec1731458211
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1731458211.dir/link.txt --verbose=1
+/usr/bin/cc   -DOpenMP_FLAG_DETECTED -fopenmp    CMakeFiles/cmTryCompileExec1731458211.dir/src.c.o  -o cmTryCompileExec1731458211 -rdynamic 
+make[1]: Leaving directory `/home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED succeded with the following output:
+Change Dir: /home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1509858440/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1509858440.dir/build.make CMakeFiles/cmTryCompileExec1509858440.dir/build
+make[1]: Entering directory `/home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1509858440.dir/src.cxx.o
+/usr/bin/c++    -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTryCompileExec1509858440.dir/src.cxx.o -c /home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec1509858440
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1509858440.dir/link.txt --verbose=1
+/usr/bin/c++    -DOpenMP_FLAG_DETECTED -fopenmp    CMakeFiles/cmTryCompileExec1509858440.dir/src.cxx.o  -o cmTryCompileExec1509858440 -rdynamic 
+make[1]: Leaving directory `/home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED succeded with the following output:
+Change Dir: /home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2536270302/fast"
+make[1]: Entering directory `/home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2536270302.dir/build.make CMakeFiles/cmTryCompileExec2536270302.dir/build
+make[2]: Entering directory `/home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2536270302.dir/src.c.o
+/usr/bin/cc   -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTryCompileExec2536270302.dir/src.c.o   -c /home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec2536270302
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2536270302.dir/link.txt --verbose=1
+/usr/bin/cc   -DOpenMP_FLAG_DETECTED -fopenmp    CMakeFiles/cmTryCompileExec2536270302.dir/src.c.o  -o cmTryCompileExec2536270302 -rdynamic 
+make[2]: Leaving directory `/home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory `/home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED succeded with the following output:
+Change Dir: /home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1622670240/fast"
+make[1]: Entering directory `/home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1622670240.dir/build.make CMakeFiles/cmTryCompileExec1622670240.dir/build
+make[2]: Entering directory `/home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1622670240.dir/src.cxx.o
+/usr/bin/c++    -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTryCompileExec1622670240.dir/src.cxx.o -c /home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec1622670240
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1622670240.dir/link.txt --verbose=1
+/usr/bin/c++    -DOpenMP_FLAG_DETECTED -fopenmp    CMakeFiles/cmTryCompileExec1622670240.dir/src.cxx.o  -o cmTryCompileExec1622670240 -rdynamic 
+make[2]: Leaving directory `/home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory `/home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED succeded with the following output:
+Change Dir: /home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec4242701712/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4242701712.dir/build.make CMakeFiles/cmTryCompileExec4242701712.dir/build
+make[1]: Entering directory `/home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4242701712.dir/src.c.o
+/usr/bin/cc   -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTryCompileExec4242701712.dir/src.c.o   -c /home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec4242701712
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4242701712.dir/link.txt --verbose=1
+/usr/bin/cc   -DOpenMP_FLAG_DETECTED -fopenmp    CMakeFiles/cmTryCompileExec4242701712.dir/src.c.o  -o cmTryCompileExec4242701712 -rdynamic 
+make[1]: Leaving directory `/home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED succeded with the following output:
+Change Dir: /home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1099507474/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1099507474.dir/build.make CMakeFiles/cmTryCompileExec1099507474.dir/build
+make[1]: Entering directory `/home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1099507474.dir/src.cxx.o
+/usr/bin/c++    -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTryCompileExec1099507474.dir/src.cxx.o -c /home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec1099507474
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1099507474.dir/link.txt --verbose=1
+/usr/bin/c++    -DOpenMP_FLAG_DETECTED -fopenmp    CMakeFiles/cmTryCompileExec1099507474.dir/src.cxx.o  -o cmTryCompileExec1099507474 -rdynamic 
+make[1]: Leaving directory `/home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED succeded with the following output:
+Change Dir: /home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3298888977/fast"
+make[1]: Entering directory `/home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3298888977.dir/build.make CMakeFiles/cmTryCompileExec3298888977.dir/build
+make[2]: Entering directory `/home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3298888977.dir/src.c.o
+/usr/bin/cc   -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTryCompileExec3298888977.dir/src.c.o   -c /home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec3298888977
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3298888977.dir/link.txt --verbose=1
+/usr/bin/cc   -DOpenMP_FLAG_DETECTED -fopenmp    CMakeFiles/cmTryCompileExec3298888977.dir/src.c.o  -o cmTryCompileExec3298888977 -rdynamic 
+make[2]: Leaving directory `/home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory `/home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED succeded with the following output:
+Change Dir: /home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3980424384/fast"
+make[1]: Entering directory `/home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3980424384.dir/build.make CMakeFiles/cmTryCompileExec3980424384.dir/build
+make[2]: Entering directory `/home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3980424384.dir/src.cxx.o
+/usr/bin/c++    -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTryCompileExec3980424384.dir/src.cxx.o -c /home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec3980424384
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3980424384.dir/link.txt --verbose=1
+/usr/bin/c++    -DOpenMP_FLAG_DETECTED -fopenmp    CMakeFiles/cmTryCompileExec3980424384.dir/src.cxx.o  -o cmTryCompileExec3980424384 -rdynamic 
+make[2]: Leaving directory `/home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory `/home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED succeded with the following output:
+Change Dir: /home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec765962696/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec765962696.dir/build.make CMakeFiles/cmTryCompileExec765962696.dir/build
+make[1]: Entering directory `/home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec765962696.dir/src.c.o
+/usr/bin/cc   -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTryCompileExec765962696.dir/src.c.o   -c /home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec765962696
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec765962696.dir/link.txt --verbose=1
+/usr/bin/cc   -DOpenMP_FLAG_DETECTED -fopenmp    CMakeFiles/cmTryCompileExec765962696.dir/src.c.o  -o cmTryCompileExec765962696 -rdynamic 
+make[1]: Leaving directory `/home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED succeded with the following output:
+Change Dir: /home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2417306664/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2417306664.dir/build.make CMakeFiles/cmTryCompileExec2417306664.dir/build
+make[1]: Entering directory `/home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2417306664.dir/src.cxx.o
+/usr/bin/c++    -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTryCompileExec2417306664.dir/src.cxx.o -c /home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec2417306664
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2417306664.dir/link.txt --verbose=1
+/usr/bin/c++    -DOpenMP_FLAG_DETECTED -fopenmp    CMakeFiles/cmTryCompileExec2417306664.dir/src.cxx.o  -o cmTryCompileExec2417306664 -rdynamic 
+make[1]: Leaving directory `/home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED succeded with the following output:
+Change Dir: /home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2588959264/fast"
+make[1]: Entering directory `/home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2588959264.dir/build.make CMakeFiles/cmTryCompileExec2588959264.dir/build
+make[2]: Entering directory `/home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2588959264.dir/src.c.o
+/usr/bin/cc   -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTryCompileExec2588959264.dir/src.c.o   -c /home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec2588959264
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2588959264.dir/link.txt --verbose=1
+/usr/bin/cc   -DOpenMP_FLAG_DETECTED -fopenmp    CMakeFiles/cmTryCompileExec2588959264.dir/src.c.o  -o cmTryCompileExec2588959264 -rdynamic 
+make[2]: Leaving directory `/home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory `/home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED succeded with the following output:
+Change Dir: /home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3991499519/fast"
+make[1]: Entering directory `/home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3991499519.dir/build.make CMakeFiles/cmTryCompileExec3991499519.dir/build
+make[2]: Entering directory `/home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3991499519.dir/src.cxx.o
+/usr/bin/c++    -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTryCompileExec3991499519.dir/src.cxx.o -c /home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec3991499519
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3991499519.dir/link.txt --verbose=1
+/usr/bin/c++    -DOpenMP_FLAG_DETECTED -fopenmp    CMakeFiles/cmTryCompileExec3991499519.dir/src.cxx.o  -o cmTryCompileExec3991499519 -rdynamic 
+make[2]: Leaving directory `/home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory `/home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED succeded with the following output:
+Change Dir: /home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec205291366/fast"
+make[1]: Entering directory `/home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec205291366.dir/build.make CMakeFiles/cmTryCompileExec205291366.dir/build
+make[2]: Entering directory `/home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec205291366.dir/src.c.o
+/usr/bin/cc   -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTryCompileExec205291366.dir/src.c.o   -c /home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec205291366
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec205291366.dir/link.txt --verbose=1
+/usr/bin/cc   -DOpenMP_FLAG_DETECTED -fopenmp    CMakeFiles/cmTryCompileExec205291366.dir/src.c.o  -o cmTryCompileExec205291366 -rdynamic 
+make[2]: Leaving directory `/home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory `/home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED succeded with the following output:
+Change Dir: /home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1696988527/fast"
+make[1]: Entering directory `/home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1696988527.dir/build.make CMakeFiles/cmTryCompileExec1696988527.dir/build
+make[2]: Entering directory `/home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1696988527.dir/src.cxx.o
+/usr/bin/c++    -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTryCompileExec1696988527.dir/src.cxx.o -c /home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec1696988527
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1696988527.dir/link.txt --verbose=1
+/usr/bin/c++    -DOpenMP_FLAG_DETECTED -fopenmp    CMakeFiles/cmTryCompileExec1696988527.dir/src.cxx.o  -o cmTryCompileExec1696988527 -rdynamic 
+make[2]: Leaving directory `/home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory `/home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+

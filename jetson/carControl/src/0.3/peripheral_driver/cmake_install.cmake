@@ -1,4 +1,4 @@
-# Install script for directory: /home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/peripheral_driver
+# Install script for directory: /home/ubuntu/bkakid/jetson/carControl/src/0.3/peripheral_driver
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,8 +34,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/peripheral_driver/i2c/cmake_install.cmake")
-  include("/home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/peripheral_driver/uart/cmake_install.cmake")
+  include("/home/ubuntu/bkakid/jetson/carControl/src/0.3/peripheral_driver/i2c/cmake_install.cmake")
+  include("/home/ubuntu/bkakid/jetson/carControl/src/0.3/peripheral_driver/uart/cmake_install.cmake")
 
 endif()
 

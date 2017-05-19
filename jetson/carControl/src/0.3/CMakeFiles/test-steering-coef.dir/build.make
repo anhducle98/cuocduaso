@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3
+CMAKE_SOURCE_DIR = /home/ubuntu/bkakid/jetson/carControl/src/0.3
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3
+CMAKE_BINARY_DIR = /home/ubuntu/bkakid/jetson/carControl/src/0.3
 
 # Include any dependencies generated for this target.
 include CMakeFiles/test-steering-coef.dir/depend.make
@@ -51,17 +51,17 @@ include CMakeFiles/test-steering-coef.dir/flags.make
 
 CMakeFiles/test-steering-coef.dir/main_pid/test-steering-coef.cpp.o: CMakeFiles/test-steering-coef.dir/flags.make
 CMakeFiles/test-steering-coef.dir/main_pid/test-steering-coef.cpp.o: main_pid/test-steering-coef.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/test-steering-coef.dir/main_pid/test-steering-coef.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/test-steering-coef.dir/main_pid/test-steering-coef.cpp.o -c /home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/main_pid/test-steering-coef.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/test-steering-coef.dir/main_pid/test-steering-coef.cpp.o -c /home/ubuntu/bkakid/jetson/carControl/src/0.3/main_pid/test-steering-coef.cpp
 
 CMakeFiles/test-steering-coef.dir/main_pid/test-steering-coef.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test-steering-coef.dir/main_pid/test-steering-coef.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/main_pid/test-steering-coef.cpp > CMakeFiles/test-steering-coef.dir/main_pid/test-steering-coef.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/ubuntu/bkakid/jetson/carControl/src/0.3/main_pid/test-steering-coef.cpp > CMakeFiles/test-steering-coef.dir/main_pid/test-steering-coef.cpp.i
 
 CMakeFiles/test-steering-coef.dir/main_pid/test-steering-coef.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test-steering-coef.dir/main_pid/test-steering-coef.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/main_pid/test-steering-coef.cpp -o CMakeFiles/test-steering-coef.dir/main_pid/test-steering-coef.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/ubuntu/bkakid/jetson/carControl/src/0.3/main_pid/test-steering-coef.cpp -o CMakeFiles/test-steering-coef.dir/main_pid/test-steering-coef.cpp.s
 
 CMakeFiles/test-steering-coef.dir/main_pid/test-steering-coef.cpp.o.requires:
 .PHONY : CMakeFiles/test-steering-coef.dir/main_pid/test-steering-coef.cpp.o.requires
@@ -99,6 +99,6 @@ CMakeFiles/test-steering-coef.dir/clean:
 .PHONY : CMakeFiles/test-steering-coef.dir/clean
 
 CMakeFiles/test-steering-coef.dir/depend:
-	cd /home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3 /home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3 /home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3 /home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3 /home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/CMakeFiles/test-steering-coef.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ubuntu/bkakid/jetson/carControl/src/0.3 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/bkakid/jetson/carControl/src/0.3 /home/ubuntu/bkakid/jetson/carControl/src/0.3 /home/ubuntu/bkakid/jetson/carControl/src/0.3 /home/ubuntu/bkakid/jetson/carControl/src/0.3 /home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/test-steering-coef.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/test-steering-coef.dir/depend
 

@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lad/workspace/bkakid/jetson/carControl/src/0.3/xla
+CMAKE_SOURCE_DIR = /home/lad/workspace/cuocduaso/bkakid/jetson/carControl/src/0.3/xla
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lad/workspace/bkakid/jetson/carControl/src/0.3/xla
+CMAKE_BINARY_DIR = /home/lad/workspace/cuocduaso/bkakid/jetson/carControl/src/0.3/xla
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lad/workspace/bkakid/jetson/carControl/src/0.3/xla/CMakeFiles /home/lad/workspace/bkakid/jetson/carControl/src/0.3/xla/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lad/workspace/cuocduaso/bkakid/jetson/carControl/src/0.3/xla/CMakeFiles /home/lad/workspace/cuocduaso/bkakid/jetson/carControl/src/0.3/xla/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lad/workspace/bkakid/jetson/carControl/src/0.3/xla/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lad/workspace/cuocduaso/bkakid/jetson/carControl/src/0.3/xla/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -176,6 +176,60 @@ lib/api_lane_detection.s: lib/api_lane_detection.cpp.s
 lib/api_lane_detection.cpp.s:
 	$(MAKE) -f CMakeFiles/xla.dir/build.make CMakeFiles/xla.dir/lib/api_lane_detection.cpp.s
 .PHONY : lib/api_lane_detection.cpp.s
+
+lib/line_detect_topview.o: lib/line_detect_topview.cpp.o
+
+.PHONY : lib/line_detect_topview.o
+
+# target to build an object file
+lib/line_detect_topview.cpp.o:
+	$(MAKE) -f CMakeFiles/xla.dir/build.make CMakeFiles/xla.dir/lib/line_detect_topview.cpp.o
+.PHONY : lib/line_detect_topview.cpp.o
+
+lib/line_detect_topview.i: lib/line_detect_topview.cpp.i
+
+.PHONY : lib/line_detect_topview.i
+
+# target to preprocess a source file
+lib/line_detect_topview.cpp.i:
+	$(MAKE) -f CMakeFiles/xla.dir/build.make CMakeFiles/xla.dir/lib/line_detect_topview.cpp.i
+.PHONY : lib/line_detect_topview.cpp.i
+
+lib/line_detect_topview.s: lib/line_detect_topview.cpp.s
+
+.PHONY : lib/line_detect_topview.s
+
+# target to generate assembly for a file
+lib/line_detect_topview.cpp.s:
+	$(MAKE) -f CMakeFiles/xla.dir/build.make CMakeFiles/xla.dir/lib/line_detect_topview.cpp.s
+.PHONY : lib/line_detect_topview.cpp.s
+
+lib/line_object.o: lib/line_object.cpp.o
+
+.PHONY : lib/line_object.o
+
+# target to build an object file
+lib/line_object.cpp.o:
+	$(MAKE) -f CMakeFiles/xla.dir/build.make CMakeFiles/xla.dir/lib/line_object.cpp.o
+.PHONY : lib/line_object.cpp.o
+
+lib/line_object.i: lib/line_object.cpp.i
+
+.PHONY : lib/line_object.i
+
+# target to preprocess a source file
+lib/line_object.cpp.i:
+	$(MAKE) -f CMakeFiles/xla.dir/build.make CMakeFiles/xla.dir/lib/line_object.cpp.i
+.PHONY : lib/line_object.cpp.i
+
+lib/line_object.s: lib/line_object.cpp.s
+
+.PHONY : lib/line_object.s
+
+# target to generate assembly for a file
+lib/line_object.cpp.s:
+	$(MAKE) -f CMakeFiles/xla.dir/build.make CMakeFiles/xla.dir/lib/line_object.cpp.s
+.PHONY : lib/line_object.cpp.s
 
 lib/line_segment.o: lib/line_segment.cpp.o
 
@@ -285,6 +339,33 @@ lib/msac/lmmin.cpp.s:
 	$(MAKE) -f CMakeFiles/xla.dir/build.make CMakeFiles/xla.dir/lib/msac/lmmin.cpp.s
 .PHONY : lib/msac/lmmin.cpp.s
 
+lib/object_detect_topview.o: lib/object_detect_topview.cpp.o
+
+.PHONY : lib/object_detect_topview.o
+
+# target to build an object file
+lib/object_detect_topview.cpp.o:
+	$(MAKE) -f CMakeFiles/xla.dir/build.make CMakeFiles/xla.dir/lib/object_detect_topview.cpp.o
+.PHONY : lib/object_detect_topview.cpp.o
+
+lib/object_detect_topview.i: lib/object_detect_topview.cpp.i
+
+.PHONY : lib/object_detect_topview.i
+
+# target to preprocess a source file
+lib/object_detect_topview.cpp.i:
+	$(MAKE) -f CMakeFiles/xla.dir/build.make CMakeFiles/xla.dir/lib/object_detect_topview.cpp.i
+.PHONY : lib/object_detect_topview.cpp.i
+
+lib/object_detect_topview.s: lib/object_detect_topview.cpp.s
+
+.PHONY : lib/object_detect_topview.s
+
+# target to generate assembly for a file
+lib/object_detect_topview.cpp.s:
+	$(MAKE) -f CMakeFiles/xla.dir/build.make CMakeFiles/xla.dir/lib/object_detect_topview.cpp.s
+.PHONY : lib/object_detect_topview.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -354,6 +435,12 @@ help:
 	@echo "... lib/api_lane_detection.o"
 	@echo "... lib/api_lane_detection.i"
 	@echo "... lib/api_lane_detection.s"
+	@echo "... lib/line_detect_topview.o"
+	@echo "... lib/line_detect_topview.i"
+	@echo "... lib/line_detect_topview.s"
+	@echo "... lib/line_object.o"
+	@echo "... lib/line_object.i"
+	@echo "... lib/line_object.s"
 	@echo "... lib/line_segment.o"
 	@echo "... lib/line_segment.i"
 	@echo "... lib/line_segment.s"
@@ -366,6 +453,9 @@ help:
 	@echo "... lib/msac/lmmin.o"
 	@echo "... lib/msac/lmmin.i"
 	@echo "... lib/msac/lmmin.s"
+	@echo "... lib/object_detect_topview.o"
+	@echo "... lib/object_detect_topview.i"
+	@echo "... lib/object_detect_topview.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

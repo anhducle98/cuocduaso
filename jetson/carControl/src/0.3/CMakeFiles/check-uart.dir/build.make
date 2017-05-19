@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3
+CMAKE_SOURCE_DIR = /home/ubuntu/bkakid/jetson/carControl/src/0.3
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3
+CMAKE_BINARY_DIR = /home/ubuntu/bkakid/jetson/carControl/src/0.3
 
 # Include any dependencies generated for this target.
 include CMakeFiles/check-uart.dir/depend.make
@@ -51,17 +51,17 @@ include CMakeFiles/check-uart.dir/flags.make
 
 CMakeFiles/check-uart.dir/main_pid/checkUart.cpp.o: CMakeFiles/check-uart.dir/flags.make
 CMakeFiles/check-uart.dir/main_pid/checkUart.cpp.o: main_pid/checkUart.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/check-uart.dir/main_pid/checkUart.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/check-uart.dir/main_pid/checkUart.cpp.o -c /home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/main_pid/checkUart.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/check-uart.dir/main_pid/checkUart.cpp.o -c /home/ubuntu/bkakid/jetson/carControl/src/0.3/main_pid/checkUart.cpp
 
 CMakeFiles/check-uart.dir/main_pid/checkUart.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/check-uart.dir/main_pid/checkUart.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/main_pid/checkUart.cpp > CMakeFiles/check-uart.dir/main_pid/checkUart.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/ubuntu/bkakid/jetson/carControl/src/0.3/main_pid/checkUart.cpp > CMakeFiles/check-uart.dir/main_pid/checkUart.cpp.i
 
 CMakeFiles/check-uart.dir/main_pid/checkUart.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/check-uart.dir/main_pid/checkUart.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/main_pid/checkUart.cpp -o CMakeFiles/check-uart.dir/main_pid/checkUart.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/ubuntu/bkakid/jetson/carControl/src/0.3/main_pid/checkUart.cpp -o CMakeFiles/check-uart.dir/main_pid/checkUart.cpp.s
 
 CMakeFiles/check-uart.dir/main_pid/checkUart.cpp.o.requires:
 .PHONY : CMakeFiles/check-uart.dir/main_pid/checkUart.cpp.o.requires
@@ -99,6 +99,6 @@ CMakeFiles/check-uart.dir/clean:
 .PHONY : CMakeFiles/check-uart.dir/clean
 
 CMakeFiles/check-uart.dir/depend:
-	cd /home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3 /home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3 /home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3 /home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3 /home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/CMakeFiles/check-uart.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ubuntu/bkakid/jetson/carControl/src/0.3 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/bkakid/jetson/carControl/src/0.3 /home/ubuntu/bkakid/jetson/carControl/src/0.3 /home/ubuntu/bkakid/jetson/carControl/src/0.3 /home/ubuntu/bkakid/jetson/carControl/src/0.3 /home/ubuntu/bkakid/jetson/carControl/src/0.3/CMakeFiles/check-uart.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/check-uart.dir/depend
 

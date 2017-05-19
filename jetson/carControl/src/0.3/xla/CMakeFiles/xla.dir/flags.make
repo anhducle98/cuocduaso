@@ -6,5 +6,5 @@ CXX_FLAGS =
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -isystem /usr/include/opencv 
+CXX_INCLUDES = -I/home/lad/workspace/cuocduaso/bkakid/jetson/carControl/src/0.3/xla -isystem /usr/include/opencv 
 

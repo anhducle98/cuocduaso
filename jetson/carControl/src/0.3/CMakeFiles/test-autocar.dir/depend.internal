@@ -16,7 +16,7 @@ CMakeFiles/test-autocar.dir/main_pid/automaticCar.cpp.o
  /home/ubuntu/Downloads/2-Linux/OpenNI-Linux-Arm-2.3/Include/OniVersion.h
  /home/ubuntu/Downloads/2-Linux/OpenNI-Linux-Arm-2.3/Include/OpenNI.h
  /home/ubuntu/Downloads/2-Linux/OpenNI-Linux-Arm-2.3/Include/Win32/OniPlatformWin32.h
- /home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/main_pid/automaticCar.cpp
+ /home/ubuntu/bkakid/jetson/carControl/src/0.3/main_pid/automaticCar.cpp
  /usr/include/linux/i2c-dev.h
  /usr/include/opencv/cv.h
  /usr/include/opencv/cxcore.h
@@ -34,44 +34,52 @@ CMakeFiles/test-autocar.dir/main_pid/automaticCar.cpp.o
  xla/./lib/line_segment.h
  xla/xla.h
 CMakeFiles/test-autocar.dir/xla/lib/IPM.cpp.o
- /home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/xla/lib/IPM.cpp
- /home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/xla/lib/IPM.h
+ /home/ubuntu/bkakid/jetson/carControl/src/0.3/xla/lib/IPM.cpp
+ /home/ubuntu/bkakid/jetson/carControl/src/0.3/xla/lib/IPM.h
 CMakeFiles/test-autocar.dir/xla/lib/api_lane_detection.cpp.o
- /home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/xla/lib/api_lane_detection.cpp
- /home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/xla/lib/api_lane_detection.h
- /home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/xla/lib/msac/MSAC.h
- /home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/xla/lib/msac/errorNIETO.h
+ /home/ubuntu/bkakid/jetson/carControl/src/0.3/xla/lib/api_lane_detection.cpp
+ /home/ubuntu/bkakid/jetson/carControl/src/0.3/xla/lib/api_lane_detection.h
+ /home/ubuntu/bkakid/jetson/carControl/src/0.3/xla/lib/msac/MSAC.h
+ /home/ubuntu/bkakid/jetson/carControl/src/0.3/xla/lib/msac/errorNIETO.h
  /usr/include/opencv/cv.h
  /usr/include/opencv/cxcore.h
  /usr/include/opencv/highgui.h
+CMakeFiles/test-autocar.dir/xla/lib/line_detect_topview.cpp.o
+ /home/ubuntu/bkakid/jetson/carControl/src/0.3/xla/lib/line_detect_topview.cpp
+ /home/ubuntu/bkakid/jetson/carControl/src/0.3/xla/lib/line_detect_topview.h
 CMakeFiles/test-autocar.dir/xla/lib/line_segment.cpp.o
- /home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/xla/lib/line_segment.cpp
- /home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/xla/lib/line_segment.h
+ /home/ubuntu/bkakid/jetson/carControl/src/0.3/xla/lib/line_segment.cpp
+ /home/ubuntu/bkakid/jetson/carControl/src/0.3/xla/lib/line_segment.h
 CMakeFiles/test-autocar.dir/xla/lib/msac/MSAC.cpp.o
- /home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/xla/lib/msac/MSAC.cpp
- /home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/xla/lib/msac/MSAC.h
- /home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/xla/lib/msac/errorNIETO.h
- /home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/xla/lib/msac/lmmin.h
+ /home/ubuntu/bkakid/jetson/carControl/src/0.3/xla/lib/msac/MSAC.cpp
+ /home/ubuntu/bkakid/jetson/carControl/src/0.3/xla/lib/msac/MSAC.h
+ /home/ubuntu/bkakid/jetson/carControl/src/0.3/xla/lib/msac/errorNIETO.h
+ /home/ubuntu/bkakid/jetson/carControl/src/0.3/xla/lib/msac/lmmin.h
  /usr/include/opencv/cv.h
  /usr/include/opencv/cxcore.h
  /usr/include/opencv/highgui.h
 CMakeFiles/test-autocar.dir/xla/lib/msac/errorNIETO.cpp.o
- /home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/xla/lib/msac/errorNIETO.cpp
- /home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/xla/lib/msac/errorNIETO.h
+ /home/ubuntu/bkakid/jetson/carControl/src/0.3/xla/lib/msac/errorNIETO.cpp
+ /home/ubuntu/bkakid/jetson/carControl/src/0.3/xla/lib/msac/errorNIETO.h
  /usr/include/opencv/cv.h
  /usr/include/opencv/cxcore.h
  /usr/include/opencv/highgui.h
 CMakeFiles/test-autocar.dir/xla/lib/msac/lmmin.cpp.o
- /home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/xla/lib/msac/lmmin.cpp
- /home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/xla/lib/msac/lmmin.h
+ /home/ubuntu/bkakid/jetson/carControl/src/0.3/xla/lib/msac/lmmin.cpp
+ /home/ubuntu/bkakid/jetson/carControl/src/0.3/xla/lib/msac/lmmin.h
+CMakeFiles/test-autocar.dir/xla/lib/object_detect_topview.cpp.o
+ /home/ubuntu/bkakid/jetson/carControl/src/0.3/xla/lib/line_detect_topview.h
+ /home/ubuntu/bkakid/jetson/carControl/src/0.3/xla/lib/object_detect_topview.cpp
 CMakeFiles/test-autocar.dir/xla/xla.cpp.o
- /home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/xla/./lib/IPM.h
- /home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/xla/./lib/api_lane_detection.h
- /home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/xla/./lib/line_segment.h
- /home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/xla/./lib/msac/MSAC.h
- /home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/xla/./lib/msac/errorNIETO.h
- /home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/xla/xla.cpp
- /home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/xla/xla.h
+ /home/ubuntu/bkakid/jetson/carControl/src/0.3/xla/./lib/IPM.h
+ /home/ubuntu/bkakid/jetson/carControl/src/0.3/xla/./lib/api_lane_detection.h
+ /home/ubuntu/bkakid/jetson/carControl/src/0.3/xla/./lib/line_segment.h
+ /home/ubuntu/bkakid/jetson/carControl/src/0.3/xla/./lib/msac/MSAC.h
+ /home/ubuntu/bkakid/jetson/carControl/src/0.3/xla/./lib/msac/errorNIETO.h
+ /home/ubuntu/bkakid/jetson/carControl/src/0.3/xla/lib/line_detect_topview.h
+ /home/ubuntu/bkakid/jetson/carControl/src/0.3/xla/lib/object_detect_topview.h
+ /home/ubuntu/bkakid/jetson/carControl/src/0.3/xla/xla.cpp
+ /home/ubuntu/bkakid/jetson/carControl/src/0.3/xla/xla.h
  /usr/include/opencv/cv.h
  /usr/include/opencv/cxcore.h
  /usr/include/opencv/highgui.h

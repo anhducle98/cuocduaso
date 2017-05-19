@@ -6,15 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/lane_detection/api_lane_detection.h
+/home/ubuntu/bkakid/jetson/carControl/src/0.3/lane_detection/api_lane_detection.h
 stdio.h
-/home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/lane_detection/stdio.h
+/home/ubuntu/bkakid/jetson/carControl/src/0.3/lane_detection/stdio.h
 opencv2/imgproc/imgproc.hpp
 -
 opencv2/highgui/highgui.hpp
 -
 opencv2/core/core.hpp
-/home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/lane_detection/opencv2/core/core.hpp
+/home/ubuntu/bkakid/jetson/carControl/src/0.3/lane_detection/opencv2/core/core.hpp
 vector
 -
 iostream
@@ -22,31 +22,31 @@ iostream
 iomanip
 -
 msac/MSAC.h
-/home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/lane_detection/msac/MSAC.h
+/home/ubuntu/bkakid/jetson/carControl/src/0.3/lane_detection/msac/MSAC.h
 
-/home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/lane_detection/msac/MSAC.h
+/home/ubuntu/bkakid/jetson/carControl/src/0.3/lane_detection/msac/MSAC.h
 cv.h
-/home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/lane_detection/msac/cv.h
+/home/ubuntu/bkakid/jetson/carControl/src/0.3/lane_detection/msac/cv.h
 highgui.h
-/home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/lane_detection/msac/highgui.h
+/home/ubuntu/bkakid/jetson/carControl/src/0.3/lane_detection/msac/highgui.h
 cxcore.h
-/home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/lane_detection/msac/cxcore.h
+/home/ubuntu/bkakid/jetson/carControl/src/0.3/lane_detection/msac/cxcore.h
 errorNIETO.h
-/home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/lane_detection/msac/errorNIETO.h
+/home/ubuntu/bkakid/jetson/carControl/src/0.3/lane_detection/msac/errorNIETO.h
 math.h
 -
 
-/home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/lane_detection/msac/errorNIETO.h
+/home/ubuntu/bkakid/jetson/carControl/src/0.3/lane_detection/msac/errorNIETO.h
 cv.h
-/home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/lane_detection/msac/cv.h
+/home/ubuntu/bkakid/jetson/carControl/src/0.3/lane_detection/msac/cv.h
 highgui.h
-/home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/lane_detection/msac/highgui.h
+/home/ubuntu/bkakid/jetson/carControl/src/0.3/lane_detection/msac/highgui.h
 cxcore.h
-/home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/lane_detection/msac/cxcore.h
+/home/ubuntu/bkakid/jetson/carControl/src/0.3/lane_detection/msac/cxcore.h
 
-/home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/lane_detection/test_lane_detection.cpp
+/home/ubuntu/bkakid/jetson/carControl/src/0.3/lane_detection/test_lane_detection.cpp
 api_lane_detection.h
-/home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/lane_detection/api_lane_detection.h
+/home/ubuntu/bkakid/jetson/carControl/src/0.3/lane_detection/api_lane_detection.h
 
 /usr/include/opencv/cv.h
 opencv2/core/core_c.h

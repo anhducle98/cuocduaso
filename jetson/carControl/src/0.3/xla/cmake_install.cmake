@@ -1,4 +1,4 @@
-# Install script for directory: /home/lad/workspace/bkakid/jetson/carControl/src/0.3/xla
+# Install script for directory: /home/lad/workspace/cuocduaso/bkakid/jetson/carControl/src/0.3/xla
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/lad/workspace/bkakid/jetson/carControl/src/0.3/xla/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/lad/workspace/cuocduaso/bkakid/jetson/carControl/src/0.3/xla/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

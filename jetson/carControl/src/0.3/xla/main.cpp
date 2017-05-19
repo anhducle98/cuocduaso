@@ -33,9 +33,16 @@ int main(int argc, char **argv) {
         static Mat bgr_frame;
         video_capture >> bgr_frame;
         if (bgr_frame.empty()) break;
-        Line lane_line = xla.process_frame(bgr_frame, bgr_writer);
-        double steering_angle = xla.adjust_angle(last_lane_line, lane_line);
-        last_lane_line = lane_line;
+        int topview_height, topview_width;
+        Rect obj_box;
+        Line lane_line = xla.process_frame(bgr_frame, bgr_writer, topview_height, topview_width, obj_box);
+        double steering_angle = xla.adjust_angle(last_lane_line, lane_line, topview_height, topview_width, obj_box);
+        //double steering_angle = xla.get_stupid_angle(bgr_frame, bgr_writer);
+        cerr << "steering_angle = " << steering_angle << endl;
+        xla.show_angle(bgr_frame, (steering_angle * (-1) / 10 + 90) / 180 * PI);
+        imshow("bgr_after", bgr_frame); waitKey(0);
+//        bgr_writer << bgr_frame;
+        //last_lane_line = lane_line;
         
         cerr << "END #" << video_capture.get(CV_CAP_PROP_POS_FRAMES) << endl;
         first_frame = false;

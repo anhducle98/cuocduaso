@@ -5,11 +5,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/peripheral_driver/uart/rs232.c" "/home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/peripheral_driver/uart/CMakeFiles/uart.dir/rs232.c.o"
+  "/home/ubuntu/bkakid/jetson/carControl/src/0.3/peripheral_driver/uart/rs232.c" "/home/ubuntu/bkakid/jetson/carControl/src/0.3/peripheral_driver/uart/CMakeFiles/uart.dir/rs232.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/peripheral_driver/uart/api_uart.cpp" "/home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/peripheral_driver/uart/CMakeFiles/uart.dir/api_uart.cpp.o"
+  "/home/ubuntu/bkakid/jetson/carControl/src/0.3/peripheral_driver/uart/api_uart.cpp" "/home/ubuntu/bkakid/jetson/carControl/src/0.3/peripheral_driver/uart/CMakeFiles/uart.dir/api_uart.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

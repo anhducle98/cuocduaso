@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/peripheral_driver/i2c/api_i2c_pwm.h
+/home/ubuntu/bkakid/jetson/carControl/src/0.3/peripheral_driver/i2c/api_i2c_pwm.h
 string.h
 -
 termios.h
@@ -22,9 +22,9 @@ cmath
 fstream
 -
 pca9685.h
-/home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/peripheral_driver/i2c/pca9685.h
+/home/ubuntu/bkakid/jetson/carControl/src/0.3/peripheral_driver/i2c/pca9685.h
 
-/home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/peripheral_driver/i2c/pca9685.h
+/home/ubuntu/bkakid/jetson/carControl/src/0.3/peripheral_driver/i2c/pca9685.h
 cstddef
 -
 /usr/include/linux/i2c-dev.h
@@ -42,15 +42,15 @@ unistd.h
 errno.h
 -
 
-/home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/peripheral_driver/i2c/test_steering_throttle.cpp
+/home/ubuntu/bkakid/jetson/carControl/src/0.3/peripheral_driver/i2c/test_steering_throttle.cpp
 api_i2c_pwm.h
-/home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/peripheral_driver/i2c/api_i2c_pwm.h
+/home/ubuntu/bkakid/jetson/carControl/src/0.3/peripheral_driver/i2c/api_i2c_pwm.h
 ../uart/api_uart.h
-/home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/peripheral_driver/uart/api_uart.h
+/home/ubuntu/bkakid/jetson/carControl/src/0.3/peripheral_driver/uart/api_uart.h
 iostream
 -
 
-/home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/peripheral_driver/uart/api_uart.h
+/home/ubuntu/bkakid/jetson/carControl/src/0.3/peripheral_driver/uart/api_uart.h
 stdlib.h
 -
 stdio.h
@@ -58,9 +58,9 @@ stdio.h
 unistd.h
 -
 rs232.h
-/home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/peripheral_driver/uart/rs232.h
+/home/ubuntu/bkakid/jetson/carControl/src/0.3/peripheral_driver/uart/rs232.h
 
-/home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/peripheral_driver/uart/rs232.h
+/home/ubuntu/bkakid/jetson/carControl/src/0.3/peripheral_driver/uart/rs232.h
 stdio.h
 -
 string.h

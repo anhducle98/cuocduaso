@@ -20,26 +20,86 @@
 
 using namespace openni;
 
-#define SAMPLE_READ_WAIT_TIMEOUT 2000 //2000ms
+#define SAMPLE_READ_WAIT_TIMEOUT 20000 //2000ms
 #define VIDEO_FRAME_WIDTH 640
 #define VIDEO_FRAME_HEIGHT 480
 
+
+// print elapse time since start
+void print_elapsed(time_t st) {
+    time_t et = getTickCount();
+    double elapsed = (et-st) / 1000.0f;
+    cerr << "Time: "<< elapsed << '\n';
+}
+
 /// Get depth Image or BGR image from openNI device
 /// Return represent character of each image catched
-char analyzeFrame(const VideoFrameRef& frame, Mat& depth_img, Mat& color_img) {
+
+int adjust_speed(double angle, int &speed, int min_speed, int max_speed) {
+    if (fabs(angle) > 200) {
+        angle = angle < 0 ? -200 : 200;
+    }
+    int gap = max_speed - min_speed;
+    int desire = max_speed - fabs(angle) / 200.0 * gap;
+    if (speed < desire) {
+        speed += 5;
+        if (speed > desire) {
+            speed = desire;
+        }
+    } else if (speed > desire) {
+        speed = desire;
+    }
+}    
+
+void getDepthFrame(const VideoFrameRef& frame, Mat& depthMat) {
     DepthPixel* depth_img_data;
+
+    int w = frame.getWidth();
+    int h = frame.getHeight();
+    Mat depth_img(h, w, CV_16U);
+    Mat depth_img_8u;
+    depth_img_data = (DepthPixel*)frame.getData();
+
+    memcpy(depth_img.data, depth_img_data, h*w*sizeof(DepthPixel));
+
+    normalize(depth_img, depth_img_8u, 255, 0, NORM_MINMAX);
+
+    depth_img_8u.convertTo(depth_img_8u, CV_8U);
+
+    depthMat = depth_img_8u.clone();
+}
+
+void getColorFrame(const VideoFrameRef& frame, Mat& colorMat) {
     RGB888Pixel* color_img_data;
 
     int w = frame.getWidth();
     int h = frame.getHeight();
+    Mat color_img(h, w, CV_8UC3);
+    color_img_data = (RGB888Pixel*)frame.getData();
 
-    depth_img = Mat(h, w, CV_16U);
-    color_img = Mat(h, w, CV_8UC3);
+    memcpy(color_img.data, color_img_data, h*w*sizeof(RGB888Pixel));
+
+    cvtColor(color_img, color_img, COLOR_RGB2BGR);
+
+    colorMat = color_img.clone();
+}
+
+char analyzeFrame(const VideoFrameRef& frame, Mat& depthMat, Mat& colorMat) {
+ DepthPixel* depth_img_data;
+    RGB888Pixel* color_img_data;
+
+    int w = frame.getWidth();
+    int h = frame.getHeight();
+    Mat depth_img(h, w, CV_16U);
     Mat depth_img_8u;
-	
-    switch (frame.getVideoMode().getPixelFormat())
+    Mat color_img(h, w, CV_8UC3);
+    time_t st =getTickCount();
+    int mode = frame.getVideoMode().getPixelFormat();
+    print_elapsed(st)    ;
+
+    switch (mode)
     {
-        case PIXEL_FORMAT_DEPTH_1_MM: return 'm';
+        case PIXEL_FORMAT_DEPTH_1_MM:
         case PIXEL_FORMAT_DEPTH_100_UM:
 
             depth_img_data = (DepthPixel*)frame.getData();
@@ -50,20 +110,25 @@ char analyzeFrame(const VideoFrameRef& frame, Mat& depth_img, Mat& color_img) {
 
             depth_img_8u.convertTo(depth_img_8u, CV_8U);
 
+            depthMat = depth_img_8u.clone();
             return 'd';
+            break;
         case PIXEL_FORMAT_RGB888:
             color_img_data = (RGB888Pixel*)frame.getData();
 
             memcpy(color_img.data, color_img_data, h*w*sizeof(RGB888Pixel));
 
             cvtColor(color_img, color_img, COLOR_RGB2BGR);
-		
+
+            colorMat = color_img.clone();
             return 'c';
+            break;
         default:
             printf("Unknown format\n");
-            return 'u';
     }
 }
+
+
 
 /// Return angle between veritcal line containing car and destination point in degree
 double getTheta(Point car, Point dst) {
@@ -88,6 +153,7 @@ void setThrottle(int speed) {
 		sprintf(buf_send, "b%d\n", speed);
 	}
 }
+
 
 ///////// utilitie functions  ///////////////////////////
 
@@ -145,6 +211,10 @@ int main( int argc, char* argv[] ) {
             printf("Couldn't create color stream\n%s\n", OpenNI::getExtendedError());
         }
     }
+
+    device.setDepthColorSyncEnabled(true);
+    device.setImageRegistrationMode(IMAGE_REGISTRATION_DEPTH_TO_COLOR);
+
     
     VideoFrameRef frame;
     VideoStream* streams[] = {&depth, &color};
@@ -154,13 +224,11 @@ int main( int argc, char* argv[] ) {
     bool is_save_file = true; // set is_save_file = true if you want to log video and i2c pwm coeffs.
     VideoWriter depth_videoWriter;	
     VideoWriter color_videoWriter;
-    VideoWriter gray_videoWriter;
      
-    string gray_filename = "gray.avi";
 	string color_filename = "color.avi";
 	string depth_filename = "depth.avi";
 	
-	Mat depthImg, colorImg, grayImage;
+	Mat depthImg, colorImg;
 	int codec = CV_FOURCC('D','I','V', 'X');
 	int video_frame_width = VIDEO_FRAME_WIDTH;
     int video_frame_height = VIDEO_FRAME_HEIGHT;
@@ -168,9 +236,8 @@ int main( int argc, char* argv[] ) {
 
    	FILE *thetaLogFile; // File creates log of signal send to pwm control
 	if(is_save_file) {
-	    gray_videoWriter.open(gray_filename, codec, 8, output_size, false);
         color_videoWriter.open(color_filename, codec, 8, output_size, true);
-        //depth_videoWriter.open(depth_filename, codec, 8, output_size, false);
+        depth_videoWriter.open(depth_filename, codec, 8, output_size, false);
         thetaLogFile = fopen("thetaLog.txt", "w");
 	}
 /// End of init logs phase ///
@@ -200,21 +267,25 @@ int main( int argc, char* argv[] ) {
     }
 
     /// Init MSAC vanishing point library
-    MSAC msac;
+    /*MSAC msac;
     cv::Rect roi1 = cv::Rect(0, VIDEO_FRAME_HEIGHT*3/4,
                             VIDEO_FRAME_WIDTH, VIDEO_FRAME_HEIGHT/4);
 
     api_vanishing_point_init( msac );
-
+    */
+    cerr << "INIT_SPEED BEGIN :)" << endl;
     ////////  Init direction and ESC speed  ///////////////////////////
     dir = DIR_REVERSE;
-    int set_throttle_val = 0;
+    int min_speed = 0, max_speed = 0;
     throttle_val = 0;
     theta = 0;
     
     // Argc == 2 eg ./test-autocar 27 means initial throttle is 27
-    if(argc == 2 ) set_throttle_val = atoi(argv[1]);
-    fprintf(stderr, "Initial throttle: %d\n", set_throttle_val);
+//    if(argc == 2 )
+    min_speed = atoi(argv[1]);
+    max_speed = atoi(argv[2]);
+    
+    fprintf(stderr, "Initial throttle: %d\n", min_speed);
     int frame_width = VIDEO_FRAME_WIDTH;
     int frame_height = VIDEO_FRAME_HEIGHT;
     Point carPosition(frame_width / 2, frame_height);
@@ -226,15 +297,20 @@ int main( int argc, char* argv[] ) {
     //============ End of Init phase  ==========================================
 
     //============  PID Car Control start here. You must modify this section ===
-
+    
+    cerr << "INIT DONE :)" << endl;
+    
     bool running = false, started = false, stopped = false;
 
     double st = 0, et = 0, fps = 0;
     double freq = getTickFrequency();
-
-
-    bool is_show_cam = false;
+//create a XLA object    
+    XLA xla("params.txt");
+    Line last_lane_line;
+//
+    bool is_show_cam = true;
 	int count_s,count_ss;
+	int count_frame = 0;
     while ( true )
     {
         Point center_point(0,0);
@@ -266,7 +342,7 @@ int main( int argc, char* argv[] ) {
 			{
     			fprintf(stderr, "ON\n");
 			    started = true; stopped = false;
-				throttle_val = set_throttle_val;
+				throttle_val = min_speed;
 				setThrottle(throttle_val);
 				api_uart_write(cport_nr, buf_send);
 			}
@@ -280,7 +356,27 @@ int main( int argc, char* argv[] ) {
 		        printf("Wait failed! (timeout is %d ms)\n%s\n", SAMPLE_READ_WAIT_TIMEOUT, OpenNI::getExtendedError());
 		        break;
 		    }
-
+		    
+		    //if (readyStream == 0) continue;
+		    
+		    cerr << "readyStream " << readyStream << endl;
+		    
+		    //cerr << "############################"             << endl;
+            //color.readFrame(&frame);
+            //cerr << "readOK" << endl;
+            //getColorFrame(frame,colorImg);
+            //cerr << "getOK" << endl;
+            //depth.readFrame(&frame);
+            //getDepthFrame(frame,depthImg);
+            
+            /*print_elapsed(st);
+            
+            //imshow("depth", depthImg);
+            imshow("color", colorImg);
+            waitKey(30);
+            continue;*/
+            
+            
 		    switch (readyStream)
 		    {
 		        case 0:
@@ -294,16 +390,36 @@ int main( int argc, char* argv[] ) {
 		        default:
 		            printf("Unxpected stream\n");
 		    }
+		    
+
 		    char recordStatus = analyzeFrame(frame, depthImg, colorImg);
+            cerr << "record " << recordStatus << endl;
+            //char recordStatus = 'c';
 		   
             ////////// Detect Center Point ////////////////////////////////////
             if (recordStatus == 'c') {
                 /**
                     Status = BGR Image. Since we developed this project to run a sample, we only used information of gray image.
                 **/
-                theta = process_frame(colorImg, color_videoWriter);
+                int topview_height, topview_width;
+                Line lane_line = xla.process_frame(colorImg, color_videoWriter, topview_height, topview_width);
+                theta = xla.adjust_angle(last_lane_line, lane_line, topview_height, topview_width);
+                adjust_speed(theta, throttle_val, min_speed, max_speed);
+                setThrottle(throttle_val); 
+                api_uart_write(cport_nr, buf_send);
+                last_lane_line = lane_line;
+                /*
+                count_frame += 1;
+                if (count_frame % 10 < 5) {
+                    theta = 10 * 20;
+                } else {
+                    theta = 12 * 20;
+                }
+//                theta = count_frame % 15 * 20;
+*/
                 std::cerr << "Theta = " << theta << std::endl;
-                cvtColor(colorImg, grayImage, CV_BGR2GRAY);
+                //Mat grayImage;
+                //cvtColor(colorImg, grayImage, CV_BGR2GRAY);
                 // api_get_lane_center( grayImage, center_point, true);
                 //api_get_vanishing_point( grayImage, roi1, msac, center_point, is_show_cam,"Canny");
                 /**
@@ -348,7 +464,7 @@ int main( int argc, char* argv[] ) {
             fps = 1.0 / ((et-st)/freq);
             cerr << "FPS: "<< fps<< '\n';
 
-            if (recordStatus == 'c' && is_save_file) {
+            /*if (recordStatus == 'c' && is_save_file) {
                 // 'Center': target point
                 // pwm2: STEERING coefficient that pwm at channel 2 (our steering wheel's channel)
                 fprintf(thetaLogFile, "Center: [%d, %d]\n", center_point.x, center_point.y);
@@ -358,14 +474,16 @@ int main( int argc, char* argv[] ) {
 //			    if (!grayImage.empty()) gray_videoWriter.write(grayImage); 
             }
             if (recordStatus == 'd' && is_save_file) {
+                //cv::imshow("depth", depthImg);
                 if (!depthImg.empty())
                    depth_videoWriter.write(depthImg);
             }
-
+            */
             //////// using for debug stuff  ///////////////////////////////////
             if(is_show_cam) {
-                if(!grayImage.empty())
-                    imshow( "gray", grayImage );
+                if(!depthImg.empty()) {
+                    //imshow( "depth", depthImg );
+                }
                 waitKey(10);
             }
             if( key == 27 ) break;
@@ -386,9 +504,8 @@ int main( int argc, char* argv[] ) {
     //////////  Release //////////////////////////////////////////////////////
 	if(is_save_file)
     {
-        gray_videoWriter.release();
         color_videoWriter.release();
-        //depth_videoWriter.release();
+        depth_videoWriter.release();
         fclose(thetaLogFile);
 	}
     return 0;

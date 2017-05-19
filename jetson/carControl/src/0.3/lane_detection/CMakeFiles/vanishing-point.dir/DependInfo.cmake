@@ -4,10 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/lane_detection/api_lane_detection.cpp" "/home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/lane_detection/CMakeFiles/vanishing-point.dir/api_lane_detection.cpp.o"
-  "/home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/lane_detection/msac/MSAC.cpp" "/home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/lane_detection/CMakeFiles/vanishing-point.dir/msac/MSAC.cpp.o"
-  "/home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/lane_detection/msac/errorNIETO.cpp" "/home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/lane_detection/CMakeFiles/vanishing-point.dir/msac/errorNIETO.cpp.o"
-  "/home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/lane_detection/msac/lmmin.cpp" "/home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/lane_detection/CMakeFiles/vanishing-point.dir/msac/lmmin.cpp.o"
+  "/home/ubuntu/bkakid/jetson/carControl/src/0.3/lane_detection/api_lane_detection.cpp" "/home/ubuntu/bkakid/jetson/carControl/src/0.3/lane_detection/CMakeFiles/vanishing-point.dir/api_lane_detection.cpp.o"
+  "/home/ubuntu/bkakid/jetson/carControl/src/0.3/lane_detection/msac/MSAC.cpp" "/home/ubuntu/bkakid/jetson/carControl/src/0.3/lane_detection/CMakeFiles/vanishing-point.dir/msac/MSAC.cpp.o"
+  "/home/ubuntu/bkakid/jetson/carControl/src/0.3/lane_detection/msac/errorNIETO.cpp" "/home/ubuntu/bkakid/jetson/carControl/src/0.3/lane_detection/CMakeFiles/vanishing-point.dir/msac/errorNIETO.cpp.o"
+  "/home/ubuntu/bkakid/jetson/carControl/src/0.3/lane_detection/msac/lmmin.cpp" "/home/ubuntu/bkakid/jetson/carControl/src/0.3/lane_detection/CMakeFiles/vanishing-point.dir/msac/lmmin.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

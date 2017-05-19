@@ -1,4 +1,4 @@
-# Install script for directory: /home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/lane_detection
+# Install script for directory: /home/ubuntu/bkakid/jetson/carControl/src/0.3/lane_detection
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/stereo_vision/api_kinect_cv.cpp" "/home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/stereo_vision/CMakeFiles/kinect-cv2.dir/api_kinect_cv.cpp.o"
+  "/home/ubuntu/bkakid/jetson/carControl/src/0.3/stereo_vision/api_kinect_cv.cpp" "/home/ubuntu/bkakid/jetson/carControl/src/0.3/stereo_vision/CMakeFiles/kinect-cv2.dir/api_kinect_cv.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -4,13 +4,13 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/peripheral_driver/i2c/test_steering_throttle.cpp" "/home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/peripheral_driver/i2c/CMakeFiles/test-steering-throttle.dir/test_steering_throttle.cpp.o"
+  "/home/ubuntu/bkakid/jetson/carControl/src/0.3/peripheral_driver/i2c/test_steering_throttle.cpp" "/home/ubuntu/bkakid/jetson/carControl/src/0.3/peripheral_driver/i2c/CMakeFiles/test-steering-throttle.dir/test_steering_throttle.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/peripheral_driver/i2c/CMakeFiles/i2c-pwm.dir/DependInfo.cmake"
+  "/home/ubuntu/bkakid/jetson/carControl/src/0.3/peripheral_driver/i2c/CMakeFiles/i2c-pwm.dir/DependInfo.cmake"
   )
 
 # The include file search paths:

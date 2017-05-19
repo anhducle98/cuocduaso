@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/main_pid/test-steering-coef.cpp
+/home/ubuntu/bkakid/jetson/carControl/src/0.3/main_pid/test-steering-coef.cpp
 api_i2c_pwm.h
-/home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/main_pid/api_i2c_pwm.h
+/home/ubuntu/bkakid/jetson/carControl/src/0.3/main_pid/api_i2c_pwm.h
 api_uart.h
-/home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/main_pid/api_uart.h
+/home/ubuntu/bkakid/jetson/carControl/src/0.3/main_pid/api_uart.h
 iostream
 -
 

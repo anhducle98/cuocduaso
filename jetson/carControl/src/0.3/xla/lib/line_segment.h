@@ -10,9 +10,17 @@ class Line {
 public:
     cv::Point P, Q; //endpoints
     double a, b, c; //ax + by = c
-    bool is_left;
+    int is_left;
 
-    Line() {}
+    Line() {
+        a = -123;
+        b = -456;
+        c = -789;
+    }
+
+    bool crazy() {
+        return a == -123 && b == -456 && c == -789;
+    }
 
     Line(cv::Point P, cv::Point Q) {
         this->P = P; this->Q = Q;
@@ -42,6 +50,7 @@ public:
         }
         return res;
     }
+    
 
     double length() {
         return cv::norm(P - Q);

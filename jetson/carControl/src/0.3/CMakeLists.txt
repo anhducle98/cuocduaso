@@ -74,6 +74,10 @@ set( source_files2
 	xla/lib/api_lane_detection.cpp
     xla/lib/IPM.h
     xla/lib/IPM.cpp
+    xla/lib/line_detect_topview.cpp
+    xla/lib/line_detect_topview.h
+    xla/lib/object_detect_topview.cpp
+    xla/lib/object_detect_topview.h    
 	xla/lib/msac/MSAC.h
 	xla/lib/msac/MSAC.cpp
 	xla/lib/msac/errorNIETO.h

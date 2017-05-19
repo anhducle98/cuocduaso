@@ -23,7 +23,7 @@ using namespace cv;
 
 void
 api_vanishing_point_init(MSAC &msac);
-
+void waveletTransform(const cv::Mat& img, cv::Mat& edge, double threshold);
 void edgeProcessing(Mat org, Mat &dst, Mat element, string method = "Canny");
 void
 api_get_vanishing_point(Mat imgGray, // input

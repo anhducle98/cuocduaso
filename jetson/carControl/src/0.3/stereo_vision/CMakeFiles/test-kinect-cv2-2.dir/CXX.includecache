@@ -114,13 +114,13 @@ crtdbg.h
 stdint.h
 -
 
-/home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/stereo_vision/api_kinect_cv.h
+/home/ubuntu/bkakid/jetson/carControl/src/0.3/stereo_vision/api_kinect_cv.h
 opencv2/highgui/highgui.hpp
-/home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/stereo_vision/opencv2/highgui/highgui.hpp
+/home/ubuntu/bkakid/jetson/carControl/src/0.3/stereo_vision/opencv2/highgui/highgui.hpp
 opencv2/imgproc/imgproc.hpp
-/home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/stereo_vision/opencv2/imgproc/imgproc.hpp
+/home/ubuntu/bkakid/jetson/carControl/src/0.3/stereo_vision/opencv2/imgproc/imgproc.hpp
 stdio.h
-/home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/stereo_vision/stdio.h
+/home/ubuntu/bkakid/jetson/carControl/src/0.3/stereo_vision/stdio.h
 iomanip
 -
 OpenNI.h
@@ -132,7 +132,7 @@ fstream
 iostream
 -
 
-/home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/stereo_vision/test_kinect_cv2_2.cpp
+/home/ubuntu/bkakid/jetson/carControl/src/0.3/stereo_vision/test_kinect_cv2_2.cpp
 api_kinect_cv.h
-/home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/stereo_vision/api_kinect_cv.h
+/home/ubuntu/bkakid/jetson/carControl/src/0.3/stereo_vision/api_kinect_cv.h
 

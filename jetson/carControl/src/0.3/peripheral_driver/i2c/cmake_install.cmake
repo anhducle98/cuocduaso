@@ -1,4 +1,4 @@
-# Install script for directory: /home/ubuntu/repo/DriverlessCarChallenge/jetson/carControl/src/0.3/peripheral_driver/i2c
+# Install script for directory: /home/ubuntu/bkakid/jetson/carControl/src/0.3/peripheral_driver/i2c
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
