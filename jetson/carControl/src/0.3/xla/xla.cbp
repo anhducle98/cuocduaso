@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="xla"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\..\..\..\..\..\usr\share\;CMake Files\..\..\..\..\..\..\..\..\..\..\usr\share\opencv\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/lad/workspace/cuocduaso/bkakid/jetson/carControl/src/0.3/xla"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lad/workspace/cuocduaso/bkakid/jetson/carControl/src/0.3/xla/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lad/workspace/cuocduaso/bkakid/jetson/carControl/src/0.3/xla/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/lad/workspace/cuocduaso/bkakid/jetson/carControl/src/0.3/xla/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lad/workspace/cuocduaso/bkakid/jetson/carControl/src/0.3/xla/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/lad/workspace/cuocduaso/bkakid/jetson/carControl/src/0.3/xla"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lad/workspace/cuocduaso/bkakid/jetson/carControl/src/0.3/xla/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lad/workspace/cuocduaso/bkakid/jetson/carControl/src/0.3/xla/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/lad/workspace/cuocduaso/bkakid/jetson/carControl/src/0.3/xla/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lad/workspace/cuocduaso/bkakid/jetson/carControl/src/0.3/xla/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="xla">
+				<Option output="/home/lad/workspace/cuocduaso/bkakid/jetson/carControl/src/0.3/xla/xla" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/lad/workspace/cuocduaso/bkakid/jetson/carControl/src/0.3/xla"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/lad/workspace/cuocduaso/bkakid/jetson/carControl/src/0.3/xla"/>
+					<Add directory="/usr/include/opencv"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lad/workspace/cuocduaso/bkakid/jetson/carControl/src/0.3/xla/Makefile&quot;  VERBOSE=1 xla"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lad/workspace/cuocduaso/bkakid/jetson/carControl/src/0.3/xla/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/lad/workspace/cuocduaso/bkakid/jetson/carControl/src/0.3/xla/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lad/workspace/cuocduaso/bkakid/jetson/carControl/src/0.3/xla/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="xla/fast">
+				<Option output="/home/lad/workspace/cuocduaso/bkakid/jetson/carControl/src/0.3/xla/xla" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/lad/workspace/cuocduaso/bkakid/jetson/carControl/src/0.3/xla"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/lad/workspace/cuocduaso/bkakid/jetson/carControl/src/0.3/xla"/>
+					<Add directory="/usr/include/opencv"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lad/workspace/cuocduaso/bkakid/jetson/carControl/src/0.3/xla/Makefile&quot;  VERBOSE=1 xla/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lad/workspace/cuocduaso/bkakid/jetson/carControl/src/0.3/xla/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/lad/workspace/cuocduaso/bkakid/jetson/carControl/src/0.3/xla/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lad/workspace/cuocduaso/bkakid/jetson/carControl/src/0.3/xla/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/lad/workspace/cuocduaso/bkakid/jetson/carControl/src/0.3/xla"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lad/workspace/cuocduaso/bkakid/jetson/carControl/src/0.3/xla/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lad/workspace/cuocduaso/bkakid/jetson/carControl/src/0.3/xla/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/lad/workspace/cuocduaso/bkakid/jetson/carControl/src/0.3/xla/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lad/workspace/cuocduaso/bkakid/jetson/carControl/src/0.3/xla/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/lad/workspace/cuocduaso/bkakid/jetson/carControl/src/0.3/xla/lib/IPM.cpp">
+			<Option target="xla"/>
+		</Unit>
+		<Unit filename="/home/lad/workspace/cuocduaso/bkakid/jetson/carControl/src/0.3/xla/lib/IPM.h">
+			<Option target="xla"/>
+		</Unit>
+		<Unit filename="/home/lad/workspace/cuocduaso/bkakid/jetson/carControl/src/0.3/xla/lib/api_lane_detection.cpp">
+			<Option target="xla"/>
+		</Unit>
+		<Unit filename="/home/lad/workspace/cuocduaso/bkakid/jetson/carControl/src/0.3/xla/lib/api_lane_detection.h">
+			<Option target="xla"/>
+		</Unit>
+		<Unit filename="/home/lad/workspace/cuocduaso/bkakid/jetson/carControl/src/0.3/xla/lib/line_detect_topview.cpp">
+			<Option target="xla"/>
+		</Unit>
+		<Unit filename="/home/lad/workspace/cuocduaso/bkakid/jetson/carControl/src/0.3/xla/lib/line_detect_topview.h">
+			<Option target="xla"/>
+		</Unit>
+		<Unit filename="/home/lad/workspace/cuocduaso/bkakid/jetson/carControl/src/0.3/xla/lib/line_object.cpp">
+			<Option target="xla"/>
+		</Unit>
+		<Unit filename="/home/lad/workspace/cuocduaso/bkakid/jetson/carControl/src/0.3/xla/lib/line_object.h">
+			<Option target="xla"/>
+		</Unit>
+		<Unit filename="/home/lad/workspace/cuocduaso/bkakid/jetson/carControl/src/0.3/xla/lib/line_segment.cpp">
+			<Option target="xla"/>
+		</Unit>
+		<Unit filename="/home/lad/workspace/cuocduaso/bkakid/jetson/carControl/src/0.3/xla/lib/line_segment.h">
+			<Option target="xla"/>
+		</Unit>
+		<Unit filename="/home/lad/workspace/cuocduaso/bkakid/jetson/carControl/src/0.3/xla/lib/msac/MSAC.cpp">
+			<Option target="xla"/>
+		</Unit>
+		<Unit filename="/home/lad/workspace/cuocduaso/bkakid/jetson/carControl/src/0.3/xla/lib/msac/MSAC.h">
+			<Option target="xla"/>
+		</Unit>
+		<Unit filename="/home/lad/workspace/cuocduaso/bkakid/jetson/carControl/src/0.3/xla/lib/msac/errorNIETO.cpp">
+			<Option target="xla"/>
+		</Unit>
+		<Unit filename="/home/lad/workspace/cuocduaso/bkakid/jetson/carControl/src/0.3/xla/lib/msac/errorNIETO.h">
+			<Option target="xla"/>
+		</Unit>
+		<Unit filename="/home/lad/workspace/cuocduaso/bkakid/jetson/carControl/src/0.3/xla/lib/msac/lmmin.cpp">
+			<Option target="xla"/>
+		</Unit>
+		<Unit filename="/home/lad/workspace/cuocduaso/bkakid/jetson/carControl/src/0.3/xla/lib/msac/lmmin.h">
+			<Option target="xla"/>
+		</Unit>
+		<Unit filename="/home/lad/workspace/cuocduaso/bkakid/jetson/carControl/src/0.3/xla/lib/object_detect_topview.cpp">
+			<Option target="xla"/>
+		</Unit>
+		<Unit filename="/home/lad/workspace/cuocduaso/bkakid/jetson/carControl/src/0.3/xla/lib/object_detect_topview.h">
+			<Option target="xla"/>
+		</Unit>
+		<Unit filename="/home/lad/workspace/cuocduaso/bkakid/jetson/carControl/src/0.3/xla/main.cpp">
+			<Option target="xla"/>
+		</Unit>
+		<Unit filename="/home/lad/workspace/cuocduaso/bkakid/jetson/carControl/src/0.3/xla/xla.cpp">
+			<Option target="xla"/>
+		</Unit>
+		<Unit filename="/home/lad/workspace/cuocduaso/bkakid/jetson/carControl/src/0.3/xla/xla.h">
+			<Option target="xla"/>
+		</Unit>
+		<Unit filename="/home/lad/workspace/cuocduaso/bkakid/jetson/carControl/src/0.3/xla/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/lad/workspace/cuocduaso/bkakid/jetson/carControl/src/0.3/xla/../../../../../../../../../../usr/share/opencv/OpenCVConfig-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\..\..\usr\share\opencv\"/>
+		</Unit>
+		<Unit filename="/home/lad/workspace/cuocduaso/bkakid/jetson/carControl/src/0.3/xla/../../../../../../../../../../usr/share/opencv/OpenCVConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\..\..\usr\share\opencv\"/>
+		</Unit>
+		<Unit filename="/home/lad/workspace/cuocduaso/bkakid/jetson/carControl/src/0.3/xla/../../../../../../../../../../usr/share/opencv/OpenCVModules.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\..\..\usr\share\opencv\"/>
+		</Unit>
+		<Unit filename="/home/lad/workspace/cuocduaso/bkakid/jetson/carControl/src/0.3/xla/../../../../../../../../../../usr/share/opencv/OpenCVModules-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\..\..\usr\share\opencv\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

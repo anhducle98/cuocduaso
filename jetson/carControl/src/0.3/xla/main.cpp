@@ -21,7 +21,7 @@ int main(int argc, char **argv) {
     //Rect ROI = Rect(0, height / 2, width, height / 2);
 
     VideoWriter bgr_writer;
-    bgr_writer.open("bgr.avi", CV_FOURCC('X', 'V', 'I', 'D'), 10, Size(width, height));
+    bgr_writer.open("bgr.avi", CV_FOURCC('X', 'V', 'I', 'D'), 10, Size(1281, 579));
 
     Line last_lane_line;
     bool first_frame = true;
@@ -40,10 +40,10 @@ int main(int argc, char **argv) {
         //double steering_angle = xla.get_stupid_angle(bgr_frame, bgr_writer);
         cerr << "steering_angle = " << steering_angle << endl;
         xla.show_angle(bgr_frame, (steering_angle * (-1) / 10 + 90) / 180 * PI);
-        imshow("bgr_after", bgr_frame); waitKey(0);
+        imshow("bgr_after", bgr_frame); waitKey(30);
 //        bgr_writer << bgr_frame;
         //last_lane_line = lane_line;
-        
+
         cerr << "END #" << video_capture.get(CV_CAP_PROP_POS_FRAMES) << endl;
         first_frame = false;
     }

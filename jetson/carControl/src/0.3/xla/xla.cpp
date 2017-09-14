@@ -3,7 +3,7 @@
 #include "lib/object_detect_topview.h"
 #include "lib/line_object.h"
 #include "lib/api_lane_detection.h"
-//#define SHOW_OUTPUT
+#define SHOW_OUTPUT
 #define WRITE_VIDEO
 //#define MODE_COLOR
 
@@ -67,7 +67,7 @@ vector<Line> XLA::get_all_lines(Mat &binary_frame) {
     vector<Vec4i> lines;
     run_hough_transform(binary_frame, lines);
     vector<Line> d;
-    for (int i = 0; i < lines.size(); ++i) { 
+    for (int i = 0; i < lines.size(); ++i) {
         Point A(lines[i][0],lines[i][1]);
         Point B(lines[i][2],lines[i][3]);
         Line Q(A,B);
@@ -108,7 +108,7 @@ Rect XLA::get_bounding_box(Mat &object_binary) {
     vector<vector<Point> > contours;
     vector<Vec4i> hierarchy;
     findContours(object_binary, contours, hierarchy, CV_RETR_TREE, CV_CHAIN_APPROX_SIMPLE, Point(0, 0));
-    
+
     // cerr << "found " << contours.size() << " contours" << endl;
 
     int best_id = 0;
@@ -128,29 +128,31 @@ void XLA::lets_be_handsome(Mat &bgr_frame, Mat &gray_frame, Mat &topview_frame, 
     topview_frame = Topview_transform(bgr_frame);
     //topview_frame = topview_frame(Rect(0, topview_frame.rows*4/8, topview_frame.cols, topview_frame.rows*4/8));
     //resize(topview_frame, topview_frame, Size(topview_frame.cols / 2, topview_frame.rows / 2), INTER_LANCZOS4);
-    //cvtColor(topview_frame, gray_frame, CV_BGR2GRAY);
-    //gray_frame = Detect_color(topview_frame);
-    //static Mat element = cv::getStructuringElement(MORPH_RECT, Size(3, 3), Point(1, 1));
-    //edgeProcessing(gray_frame, binary_frame, element, "Wavelet");
+    cvtColor(topview_frame, gray_frame, CV_BGR2GRAY);
+    gray_frame = Detect_color(topview_frame);
+    static Mat element = cv::getStructuringElement(MORPH_RECT, Size(3, 3), Point(1, 1));
+    edgeProcessing(gray_frame, binary_frame, element, "Wavelet");
 // LINE OBJECT
+/*
     Mat object_binary, wavelet;
     get_line_and_object(topview_frame, object_binary, binary_frame);
     obj_box = get_bounding_box(object_binary);
     waveletTransform(binary_frame, wavelet, 0.15);
     binary_frame = wavelet;
-
+*/
     int morph_elem = 1;
     int morph_size = 10;
     Mat mor = getStructuringElement( morph_elem, Size( 2*morph_size + 1, 2*morph_size+1 ), Point( morph_size, morph_size ) );
     morphologyEx( binary_frame, binary_frame, 3, mor );
+
 //
 
 
 
     // filter_binary_image(binary_frame, binary_frame);
 #ifdef SHOW_OUTPUT
-    imshow("object_binary", object_binary);
-    imshow("binary_frame_before", binary_frame);
+    //imshow("object_binary", object_binary);
+    //imshow("binary_frame_before", binary_frame);
 #endif
 /*
     if (LOCAL_FRAME_WIDTH != width || LOCAL_FRAME_HEIGHT != height) {
@@ -159,33 +161,33 @@ void XLA::lets_be_handsome(Mat &bgr_frame, Mat &gray_frame, Mat &topview_frame, 
         width = LOCAL_FRAME_WIDTH;
         height = LOCAL_FRAME_HEIGHT;
     }
-*/    
+*/
 
 
-    
-    // vector<vector<Point> > contours;
-    // vector<Vec4i> hierarchy;
-    // findContours(binary_frame, contours, hierarchy, CV_RETR_TREE, CV_CHAIN_APPROX_SIMPLE, Point(0, 0));
-    // cerr << "found " << contours.size() << " contours" << endl;
 
-    // vector<vector<Point> > save;
-    // for (int i = 0; i < contours.size(); ++i) {
-    //     double perimeter = max(arcLength(contours[i], true), arcLength(contours[i], false));
-    //     double area = contourArea(contours[i]);
-        
-    //     if (perimeter < 50) { continue; }
-        
-    //     //if (get_average_intensity(gray_frame, contours[i]) < 100) { continue; }
-    //     save.push_back(contours[i]);
-    // }
-    // contours = save;
-    
-    // binary_frame = Mat::zeros(binary_frame.size(), CV_8UC1);
-    // for (int i = 0; i < contours.size(); ++i) {
-    //     Scalar color = Scalar(255, 255, 255);
-    //     drawContours(binary_frame, contours, i, color, 2, 8, hierarchy, 0, Point());
-    //  }
-    
+    vector<vector<Point> > contours;
+    vector<Vec4i> hierarchy;
+    findContours(binary_frame, contours, hierarchy, CV_RETR_TREE, CV_CHAIN_APPROX_SIMPLE, Point(0, 0));
+    cerr << "found " << contours.size() << " contours" << endl;
+
+    vector<vector<Point> > save;
+    for (int i = 0; i < contours.size(); ++i) {
+        double perimeter = max(arcLength(contours[i], true), arcLength(contours[i], false));
+        double area = contourArea(contours[i]);
+
+        if (perimeter < 100) { continue; }
+
+        //if (get_average_intensity(gray_frame, contours[i]) < 100) { continue; }
+        save.push_back(contours[i]);
+    }
+    contours = save;
+
+    binary_frame = Mat::zeros(binary_frame.size(), CV_8UC1);
+    for (int i = 0; i < contours.size(); ++i) {
+        Scalar color = Scalar(255, 255, 255);
+        drawContours(binary_frame, contours, i, color, 2, 8, hierarchy, 0, Point());
+     }
+
 }
 
 Line XLA::process_frame(Mat &bgr_frame, VideoWriter &bgr_writer, int &topview_height, int &topview_width, Rect &obj_box) {
@@ -206,7 +208,7 @@ Line XLA::process_frame(Mat &bgr_frame, VideoWriter &bgr_writer, int &topview_he
         height = LOCAL_FRAME_HEIGHT;
     }
     binary_frame = color_filter(topview_frame);
-*/  
+*/
 
     lets_be_handsome(bgr_frame, gray_frame, topview_frame, binary_frame, obj_box);
     width = binary_frame.cols;
@@ -232,7 +234,7 @@ Line XLA::process_frame(Mat &bgr_frame, VideoWriter &bgr_writer, int &topview_he
     vector<Line> all = get_all_lines(binary_frame);
     filter_lines_angle(all);
     //if (all.empty()) return Line(Point(binary_frame.cols / 2, 0), Point(binary_frame.cols / 2, binary_frame.rows - 1));
-    
+
     Line split_line = Line(Point(width / 2, 0), Point(width / 2, height));
     if (!all.empty()) {
         split_line = approximate(all, get_steering_angle(all));
@@ -246,7 +248,7 @@ Line XLA::process_frame(Mat &bgr_frame, VideoWriter &bgr_writer, int &topview_he
     // cerr << "left " << left_image.rows << ' ' << left_image.cols << endl;
     // cerr << "right " << right_image.rows << ' ' << right_image.cols << endl;
 #ifdef SHOW_OUTPUT
-    imshow("left-image", left_image); imshow("right-image", right_image);
+    //imshow("left-image", left_image); imshow("right-image", right_image);
 #endif
     vector<Line> left_lane = process_one_side(left_image);
     vector<Line> right_lane = process_one_side(right_image);
@@ -285,7 +287,7 @@ Line XLA::process_frame(Mat &bgr_frame, VideoWriter &bgr_writer, int &topview_he
     }
     cerr << "res.is_left = " << res.is_left << endl;
     Mat hough_frame = topview_frame.clone();
-    
+
 #ifdef WRITE_VIDEO
     if (from_all) {
         draw_lines(hough_frame, all);
@@ -318,7 +320,15 @@ Line XLA::process_frame(Mat &bgr_frame, VideoWriter &bgr_writer, int &topview_he
     }
     cerr << "hough_frame" << hough_frame.cols << ' ' << hough_frame.rows << endl;
     //bgr_writer << hough_frame;
-    bgr_writer << bgr_frame;
+    Mat big_frame = Mat::zeros(hough_frame.rows * 3 + 3, bgr_frame.cols + hough_frame.cols + 1, CV_8UC3);
+    cvtColor(binary_frame, binary_frame, CV_GRAY2BGR);
+    bgr_frame.copyTo(big_frame(cv::Rect(0, 0, bgr_frame.cols, bgr_frame.rows)));
+    topview_frame.copyTo(big_frame(cv::Rect(bgr_frame.cols + 1, 0, topview_frame.cols, topview_frame.rows)));
+    binary_frame.copyTo(big_frame(cv::Rect(bgr_frame.cols + 1, topview_frame.rows + 1, binary_frame.cols, binary_frame.rows)));
+    hough_frame.copyTo(big_frame(cv::Rect(bgr_frame.cols + 1, topview_frame.rows * 2 + 2, hough_frame.cols, hough_frame.rows)));
+    cerr << "BIG FRAME " << big_frame.cols << ' ' << big_frame.rows << endl;
+    imshow("big_frame", big_frame);
+    bgr_writer << big_frame;
 #endif
 
     return res;
@@ -438,7 +448,7 @@ Mat XLA::color_filter(Mat frame) {
     Mat threshold, res, hsv, mor, final;
     assert(frame.channels() == 3);
     cvtColor(frame, hsv, COLOR_BGR2HSV);
-    
+
     inRange(hsv, Scalar(low_b, low_g, low_r), Scalar(high_b, high_g, high_r), threshold);
     bitwise_and(frame, frame, res, threshold);
     mor = getStructuringElement( morph_elem, Size( 2*morph_size + 1, 2*morph_size+1 ), Point( morph_size, morph_size ) );
@@ -521,7 +531,7 @@ double XLA::get_stupid_angle(Mat &bgr_frame, VideoWriter &bgr_writer) {
     // for (double angle = -PI / 6; angle < PI / 6; angle += 0.1) {
     //     // double abs_angle = angle + PI / 2;
     //     // double min_dist = 1e18;
-        
+
     //     // Line cur(from, Point(0, tan(PI - abs_angle) * binary_frame.cols / 2));
     //     // for (int i = 0; i < all.size(); ++i) {
     //     //     Point M = intersection(cur, all[i]);
@@ -532,11 +542,11 @@ double XLA::get_stupid_angle(Mat &bgr_frame, VideoWriter &bgr_writer) {
     //     //         }
     //     //     }
     //     // }
-        
+
     //     // for (int x = binary_frame.cols / 2 + 1; x < binary_frame.cols / 2 + 50; ++x) {
     //     //     int y = binary_frame.rows - x * tan(abs_angle);
     //     //     if (binary_frame.at<uchar>(y, x) == 255) {
-    //     //         min_dist = 
+    //     //         min_dist =
     //     //     }
     //     // }
     //     // cerr << "angle, min_dist = " << angle << ' ' << min_dist << endl;
@@ -603,8 +613,8 @@ double XLA::get_stupid_angle(Mat &bgr_frame, VideoWriter &bgr_writer) {
     Line pro(from, target);
 
     Mat hough_frame = topview_frame.clone();
-    
-#ifdef WRITE_VIDEO                                                                                                                        
+
+#ifdef WRITE_VIDEO
     draw_lines(hough_frame, all);
     show_angle(hough_frame, res + PI / 2);
 #endif
