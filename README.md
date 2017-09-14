@@ -4,13 +4,9 @@
 
 [Demo run](https://youtu.be/9dxwLbKFabg)
 
-[![N|Solid](https://cuocduaso.fpt.com.vn/sites/default/files/styles/gallery_image_300x220/public/media-youtube/fk8ZaMxiRQQ.jpg?itok=9ZvryNrn)](https://cuocduaso.fpt.com.vn)
+Project for [FPT Digital Race](https://cuocduaso.fpt.com.vn/en).
 
-Software for the Driverless Car 2017.
-
-[Digital Race](https://cuocduaso.fpt.com.vn/en) 
-
-[FPT Digital Race Youtube Channel](https://www.youtube.com/watch?v=ReT8AF0dVFs)
+More information about the competition [here](https://www.youtube.com/watch?v=ReT8AF0dVFs)
 
 # Setup Instructions
 
